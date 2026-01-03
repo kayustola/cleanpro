@@ -1,13 +1,12 @@
-@media (max-width: 768px) {
-  /* mobile styles go here */
-}
-
-
 /* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /* GLOBAL STYLES */
@@ -62,28 +61,35 @@ nav ul li a {
   cursor: pointer;
   color: #fff;
 }
-
 /* MOBILE */
+
 @media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
   .hamburger {
     display: block;
   }
 
   nav ul {
+    width: 100%;
     display: none;
     flex-direction: column;
     background: #0a3d62;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 1rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
   }
 
   nav ul.show {
     display: flex;
   }
-}
 
+  nav ul li {
+    text-align: center;
+    padding: 0.7rem 0;
+  }
+}
 /* HERO SECTION */
 #hero {
   height: 90vh;
@@ -367,5 +373,6 @@ nav ul li a {
   font-size: 0.85rem;
   color: #aaa;
 }
+
 
 
