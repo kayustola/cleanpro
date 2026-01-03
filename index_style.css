@@ -243,9 +243,15 @@ nav ul li a {
   color: #333;
 }
 
-.about-image img {
-  width: 420px;
-  border-radius: 12px;
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
 }
 /* CONTACT */
 #contact {
@@ -264,6 +270,11 @@ nav ul li a {
   form button {
     width: 100%;
   }
+  @media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
 }
 .contact-info {
   flex: 1;
@@ -329,6 +340,12 @@ nav ul li a {
   gap: 2rem;
   padding: 0 6%;
 }
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .footer-brand h3 {
   font-size: 1.5rem;
@@ -373,6 +390,11 @@ nav ul li a {
   font-size: 0.85rem;
   color: #aaa;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 
