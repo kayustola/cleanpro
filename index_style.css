@@ -36,6 +36,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 nav ul {
@@ -44,6 +50,12 @@ nav ul {
   gap: 1.5rem;
 }
 
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hamburger */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -70,21 +82,6 @@ nav ul {
   nav ul.show {
     display: flex;
   }
-}
-nav h1 {
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav ul li a {
-  color: #fff;
-  font-weight: bold;
 }
 
 /* HERO SECTION */
@@ -370,4 +367,5 @@ nav ul li a {
   font-size: 0.85rem;
   color: #aaa;
 }
+
 
